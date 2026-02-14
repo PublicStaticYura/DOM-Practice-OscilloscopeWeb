@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>OscilloscopeWeb</title>
+</head>
+<body>
+
+    <div id="controls">
+        <div class="input-group">
+            <label>A</label>
+            <input type="number" id="inpAmp" value="100" step="10">
+        </div>
+        <div class="input-group">
+            <label>k</label>
+            <input type="number" id="inpK" value="0.02" step="0.005">
+        </div>
+        <div class="input-group">
+            <label>Angular velocity</label>
+            <input type="number" id="inpOmega" value="0.05" step="0.01">
+        </div>
+
+        <div class="stats">
+            T: <span id="valT">0</span> px<br>
+            f: <span id="valF">0</span> Hz
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="../javascript/main.js"></script>
+</body>
+</html>
